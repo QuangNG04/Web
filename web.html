@@ -1,25 +1,51 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scal=1.0">
-    <title>MY GALLARY</title>
-  </head>
-  <body>
-    <header>
-      <h1>My Background</h1>
-    </header>
-    <main>
-      <h2>Good Background</h2>
-      <ul>
-        <li>Anime</li>
-        <li>Game</li>
-      </ul>
-      <h2>gallery</h2>
-      <img src="shangri-la-frontier-2560x1440-21189.jpg" alt="Shangrila Frontier">
-      <img src="stellar-blade-blood-rain-4w.jpg" alt="Stella Blade Blood Rain">
-    </main>
-    <footer>
-      <p>I wish it will be ok</p>
-    </footer>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Minh Huyền Thoại</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 p-6 flex flex-col items-center gap-6 font-sans">
 
-</body></html>
+    <header class="text-center">
+        <h1 class="text-3xl font-bold text-amber-400 uppercase">Liên Minh Huyền Thoại</h1>
+    </header>
+
+    <main class="max-w-xl w-full bg-slate-800 p-6 rounded-xl border border-slate-700 space-y-6">
+        
+        <!-- Danh sách 3 mục -->
+        <section>
+            <h2 class="text-xl font-semibold text-amber-300 mb-2">3 Vị Trí Trong Game:</h2>
+            <ul class="list-disc list-inside space-y-1 text-slate-300">
+                <li>Đường Trên (Top)</li>
+                <li>Đường Giữa (Mid)</li>
+                <li>Xạ Thủ (ADC)</li>
+            </ul>
+        </section>
+
+        <!-- 3 Hình ảnh -->
+        <section>
+            <h2 class="text-xl font-semibold text-amber-300 mb-2">Hình Ảnh:</h2>
+            <div class="grid grid-cols-3 gap-2">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=300&q=80" alt="Esports" class="w-full h-24 object-cover rounded" onerror="this.src='https://placehold.co/300x200/1e293b/f59e0b?text=Game+1'">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=300&q=80" alt="Gameplay" class="w-full h-24 object-cover rounded" onerror="this.src='https://placehold.co/300x200/1e293b/f59e0b?text=Game+2'">
+                <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=300&q=80" alt="Gaming" class="w-full h-24 object-cover rounded" onerror="this.src='https://placehold.co/300x200/1e293b/f59e0b?text=Game+3'">
+            </div>
+        </section>
+
+        <!-- Liên kết ngoài -->
+        <div class="text-center pt-2">
+            <a href="https://www.leagueoflegends.com" target="_blank" class="text-amber-400 underline hover:text-amber-300">
+                Truy cập Trang Chủ League of Legends
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="text-xs text-slate-500">
+        <p>&copy; Bài tập HTML5 đơn giản</p>
+    </footer>
+
+</body>
+</html>
